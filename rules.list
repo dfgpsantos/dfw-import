@@ -1,0 +1,9 @@
+policy1;regra1;"192.168.10.0/24";"192.168.10.10","192.168.10.11";TCP;"80","443","8080";ALLOW;log
+policy1;regra2;"192.168.20.0/24";"192.168.10.9";TCP;"443";ALLOW;log
+policy1;regra3;"192.168.30.0/24";"192.168.10.10";TCP;"21","23";REJECT;log
+policy1;regra4;"192.168.40.0/24";"192.168.10.10";TCP;"80";DROP;log
+policy1;regra5;"192.168.50.3";"192.168.12.10";TCP;"23";REJECT;log
+policy1;regra6;"192.168.40.5","192.168.40.6";"192.168.11.10";UDP;"53";ALLOW;log
+policy1;regra7;"192.168.40.5";"192.168.11.10";UDP;"161-162","514";ALLOW;log
+policy1;regra8;"192.168.40.5";"192.168.11.10";ICMP;;ALLOW;log
+policy1;regra9;"192.168.70.77";"192.168.10.10/24";ANY;ANY;DROP;log
